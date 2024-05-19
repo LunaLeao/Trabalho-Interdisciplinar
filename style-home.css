@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bg_video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    background: url(mídia/fundo.png) no-repeat center;
+    background-size: cover;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    padding-left: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 123, 20, 0.7);
+    color: #fff;
+}
+
+.logo{
+    width: 4cm;
+    padding-bottom: 1rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+
+}
+
+.btn_menu {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: flex;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    user-select: none;
+    background-color: #085114;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #007B14;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.menu li:hover {
+    display: inline-block;
+    background-color: #00af0f;
+    transition: 0.3s ease;
+}
+
+.menu li+li {
+    margin-top: 12px;
+}
+
+input[type=checkbox]:checked~.menu {
+    display: block;
+}
+
+.hamburger {
+    display: block;
+}
+
+.aside_atrativos {
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(0, 123, 20, 0.7);
+    width: fit-content;
+}
+
+.titulo{
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #085114;
+    padding: 1rem;
+    margin: 8px;
+    border-radius: 50px;
+    box-shadow: 3.5px 8px 10px rgb(0, 51, 9);
+}
+
+.fundo_atrativos {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(85, 183, 101, 0.8);
+    border-radius: 20px;
+    width: fit-content;
+
+}
+
+.atrativo {
+    display: flex;
+    padding: 5px;
+    margin: 2rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    background-color: rgba(217, 217, 217, 0.7);
+    justify-content: left;
+    align-items: center;
+    width: 7.2cm;
+    border-radius: 25px;
+}
