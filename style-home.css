@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
 .bg_video {
     position: absolute;
     right: 0;
@@ -15,6 +22,7 @@
 body {
     padding: 0;
     margin: 0;
+    height: 100vh;
 }
 
 a {
@@ -27,10 +35,10 @@ li {
 
 header {
     display: flex;
-    padding: 1rem;
-    padding-left: 2rem;
+    padding: 0.5rem;
+    margin-left: 4.5rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: rgba(0, 123, 20, 0.7);
     color: #fff;
 }
@@ -54,14 +62,21 @@ footer{
     height: 100%;
     
 }
+.passeio{
+    padding-right: 2rem;
+}
 
 .logo{
     width: 6cm;
     padding-bottom: 1rem;
+    margin-right: 1rem;
+    
 }
 
 .nav-links a {
     color: #ffffff;
+    margin-right: 2rem;
+    
 
 }
 
@@ -76,6 +91,7 @@ footer{
     display: flex;
     gap: 1em;
     font-size: 18px;
+    
 }
 
 .menu li:hover {
@@ -86,21 +102,22 @@ footer{
 
 .menu li {
     padding: 5px 14px;
+    
 }
 
 input[type=checkbox] {
     display: none;
+    
 }
 
 .hamburger {
     display: flex;
-    font-family: Montserrat, sans-serif;
     font-size: 20px;
     user-select: none;
     background-color: #085114;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 3.5px 8px 10px rgb(0, 51, 9);
+    box-shadow: 3.5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .menu {
@@ -109,6 +126,7 @@ input[type=checkbox] {
     width: fit-content;
     justify-self: flex-end;
     background-color: #085114;
+    border: 2px solid #00830b;
     border-radius: 20px;
     font-family: Montserrat, sans-serif;
     right: 0;
@@ -125,7 +143,7 @@ input[type=checkbox] {
 }
 
 .menu li+li {
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
 input[type=checkbox]:checked~.menu {
@@ -136,54 +154,99 @@ input[type=checkbox]:checked~.menu {
     display: block;
 }
 
-.aside_atrativos {
-    margin: 0;
-    padding: 1rem;
+nav.menu-lateral{
+    width: 70px;
+    height: 100%;
+    padding: 40px 0 40px 1% ;
     background-color: rgba(0, 123, 20, 0.7);
-    width: fit-content;
+    box-shadow: 5px 0 0 #085114;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
 }
 
-.titulo{
+nav.menu-lateral.expandir{
+    width: 350px;
+    background-color: rgb(0, 123, 20);
+}
+
+.btn-expandir{
+    width: fit-content;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.btn-expandir:hover{
+    background-color: #00b80f;
+   
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+}
+
+ul li.item-menu a{
     font-family: Montserrat, sans-serif;
     color: white;
+    font-weight: 600px;
     font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: #085114;
-    padding: 1rem;
-    margin: 8px;
-    border-radius: 50px;
-    box-shadow: 3.5px 8px 10px rgb(0, 51, 9);
-}
-
-.fundo_atrativos {
-    margin: 1rem;
-    padding: 0.5rem;
-    background-color: rgba(85, 183, 101, 0.8);
-    border-radius: 20px;
-    width: fit-content;
-
-}
-
-.atrativo {
+    padding: 20px 4%;
     display: flex;
-    padding: 5px;
-    margin: 2rem;
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    background-color: rgba(217, 217, 217, 0.7);
-    justify-content: left;
-    align-items: center;
-    width: 7.2cm;
-    border-radius: 25px;
+    margin-bottom: 30px;
+    line-height: 40px;
+    
+   
 }
 
-.principal{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+ul li.item-menu:hover{
+    background-color: #085114;
+   
+}
+
+ul li.item-menu{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: .3s;
+}
+
+ul li.ativo{
+    background-color: #085114;
+}
+
+ul li.item-menu a .txt-menu{
+    margin-left: 40px;
+    transition: .3s;
+}
+
+nav.menu-lateral.expandir .txt-menu{
+    margin-left: 25px;
+}
+
+.fundacao{
+    display: none;
+}
+
+nav.menu-lateral.expandir .fundacao{
+    display: unset;
+    width: 150px;
+}
+
+ul li.item-menu a .icon-menu > i{
+    font-size: 30px;
+    margin-left: 10px;
 }
 
 .frase1{
+    margin-top: 1rem;
     margin-bottom: 5rem;
     font-family: Montserrat, sans-serif;
     font-size: 2.5rem;
@@ -195,7 +258,7 @@ input[type=checkbox]:checked~.menu {
 }
 
 .frase2{
-    margin-top: 20rem;
+    margin-top: 35rem;
     font-family: Montserrat, sans-serif;
     font-size: 2rem;
     font-weight: 600;
@@ -205,69 +268,3 @@ input[type=checkbox]:checked~.menu {
 
 }
 
-.rodape{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
-    background-color: #085114;
-}
-
-.fundacao{
-    
-    width: 145.5px;
-    padding: 0.5rem;
-}
-
-.info_rodape{
-    font-family: Montserrat, sans-serif;
-    font-size: 0.8rem;
-    color: white;
-}
-
-.linksUteis{
-    align-items: center;
-}
-
-.links{
-    all: unset;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    color: #00D622;
-}
-
-.links:hover{
-    background-color: rgba(124, 212, 124, 0.5);
-    border-radius: 10px;
-}
-
-.socials{
-    align-items: center;
-    padding: 1rem;
-    width: fit-content;
-}
-
-.icons{
-    padding: 0.5rem;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-}
-
-.icons:hover img{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-.zap{
-    padding: 5px;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-}
-
-.zap:hover svg{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
