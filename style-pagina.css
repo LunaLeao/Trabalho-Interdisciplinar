@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+main{
+    margin-left: 10rem;
+    margin-right: 6rem;
+    margin-top: 1rem;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+}
+
+.tituloTopic{
+    font-size: 1.5rem;
+    color: #085114;
+    margin-bottom: 1rem;
+}
+
+.sobre{
+    text-align: justify;
+}
+
+#formatacao{
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+}
+
+#atractive{
+    text-align: center;
+}
+
+.atrativos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.icon-atrat{
+    text-align: center;
+    margin: 1rem;
+}
+
+.nome_atrat{
+    font-size: 1rem;
+    color: #085114;
+    width: 100px;
+    text-align: center;
+}
+
+#separar{
+    margin-top: 10px;
+}
+
+.dado{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #3E3E3E;
+}
+
+.carroussel-container {
+    margin-left: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.carroussel {
+    overflow: hidden;
+    border-radius: 20px;
+    flex-grow: 1;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide img {
+    width: 100%;
+    height: 500px; /* Ajustar a altura conforme necessário */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.navegacao button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.navegacao button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
