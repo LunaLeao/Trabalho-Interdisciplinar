@@ -20,6 +20,33 @@ main{
     margin-top: 1rem;
 }
 
+.wrap{
+    /*Ajuste a largura e altura desejadas aqui*/
+    
+    height: 400px;
+
+    /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
+    position: relative;
+}
+
+.wrap > .bg-video {
+    position: absolute;
+    
+    
+    z-index: -100; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+}
+.wrap > .bg-video > video {
+    width: 100%;
+}
+
+.passeio{
+    padding-right: 2rem;
+}
+
+
 .principal{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -52,6 +79,8 @@ main{
 }
 
 .icon-atrat{
+    justify-self: center;
+    justify-items: center;
     text-align: center;
     margin: 1rem;
 }
@@ -74,9 +103,9 @@ main{
 }
 
 .carroussel-container {
-    margin-left: 20rem;
+    margin-left: 32rem;
+    justify-content: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     max-width: 800px;
@@ -90,6 +119,7 @@ main{
 }
 
 .slides {
+    
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
