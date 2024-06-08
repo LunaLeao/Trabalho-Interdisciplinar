@@ -99,26 +99,27 @@
         </ul>
 
     </nav>
-   
+
     <div class="wrap">
-       
+
+        <!-- vídeo de fundo no início da página -->
         <div class="bg-video">
-            <video autoplay muted loop class="bg_video">
+            <video autoplay muted loop poster="mídia/fundo.png">
                 <source src="mídia/Cachoeira do Elefante.mp4" type="video/mp4">
             </video>
         </div>
-        
+
+        <!-- título da página -->
         <h2 class="titulo">
             Cachoeira do Elefante via Mirante ou pelo Vale Verde
         </h2>
     </div>
-  
-
-    
 
     <main class="principal">
 
         <article>
+
+            <!-- informações sobre o lugar e o passeio -->
             <section class="sobre">
                 <h3 class="tituloTopic">Sobre o Passeio</h3>
 
@@ -145,13 +146,14 @@
                 </p>
             </section>
 
+            <!-- dados técnicos do passeio -->
             <section>
                 <h3 class="tituloTopic">Dados Técnicos</h3>
-                
+
                 <p id="separar"> <i class="dado">Local:</i> Parque Estadual Serra do Mar - Núcleo Bertioga;</p>
                 <p id="separar"> <i class="dado">Extensão:</i> De 2,5 a 15 km;</p>
                 <p id="separar"> <i class="dado">Tempo de percurso:</i> De 5h30 a 6h;</p>
-                <p id="separar"> <i class="dado">Idade recomendada:</i> A partir de 8 anos;</p> 
+                <p id="separar"> <i class="dado">Idade recomendada:</i> A partir de 8 anos;</p>
                 <p id="separar"> <i class="dado">Dificuldade:</i> Dificíl;</p>
                 <p id="separar"> <i class="dado"> Monitoria:</i> Obrigatória;</p>
                 <p id="separar"> <i class="dado">Características ambientais:</i> Floresta Ombrófila Densa;</p>
@@ -163,6 +165,7 @@
             <section>
                 <h3 class="tituloTopic" id="atractive">Atrativos do Passeio</h3>
 
+                <!-- atrativos do passeio, apenas os dois primeiros mudam -->
                 <div class="atrativos">
                     <div class="icon-atrat">
                         <svg width="65" height="78" viewBox="0 0 65 78" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -270,15 +273,30 @@
                     </div>
                 </div>
             </section>
+
+            <div>
+
+                <h3 class="tituloTopic" style="text-align: center; margin-top: 2rem;">Tour 360º</h3>
+
+                <iframe class="tour360"
+                    src="https://momento360.com/e/u/5030aa67ab3e409393a14c8ca364ed29?utm_campaign=embed&utm_source=other&size=medium&display-plan=true"
+                    frameborder="0">
+                </iframe>
+
+            </div>
         </article>
 
     </main>
 
-        
+    <h3 class="tituloTopic" style="text-align: center; margin-top: 2rem;">Imagens da Trilha</h3>
+
+
+    <!-- carrosel de imagens -->
     <div class="carroussel-container">
         <div class="navegacao">
             <button id="anterior">❮</button>
         </div>
+
         <div class="carroussel">
             <div class="slides">
                 <div class="slide">
@@ -298,11 +316,82 @@
                 </div>
             </div>
         </div>
+
         <div class="navegacao">
             <button id="seguinte">❯</button>
         </div>
     </div>
 
+    <!-- Informações do que levar para a trilha -->
+    <div class="informativos">
+        <h3 class="tit-inform">Seu passeio seguro durante a Trilha</h3>
+
+        <div class="itensLevar">
+            <div class="itens">
+                <ul>
+                    <h3>Responsabilidade Pessoal</h3>
+                    <h4>Itens Obrigatórios</h4>
+
+                    <li>Calçado fechado</li>
+                    <li>Calça</li>
+                    <li>camiseta</li>
+
+                    <h4>Itens Recomendados</h4>
+                    <li>Repelente</li>
+                    <li>Protetor Solar</li>
+                    <li>Boné ou chapéu</li>
+                </ul>
+            </div>
+
+            <div class="itens">
+                <ul>
+                    <h3>Responsabilidade Ecotour</h3>
+                    <h4>Kit de Primeiros Socorros</h4>
+
+                    <li>Maleta de primeiros socorros</li>
+                    <li>Máscara pocket para RCP</li>
+                    <li>Kit talas moldáveis</li>
+
+                    <h4>Equipamento de Segurança</h4>
+                    
+                    <li>Cordas de ancoragem</li>
+                    <li>Boia salva vidas</li>
+                    <li>Rádio comunicador</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contato">
+        <div class="texto">
+            <h3>Agende seu Passeio</h3>
+            <p>Explore as trilhas de Bertioga! Traga sua família e amigos para uma aventura inesquecível. Agende seu passeio por
+                telefone ou WhatsApp, ou preencha seu nome e telefone no formulário ao lado, e nós entraremos em contato.Prepare-se
+                para se encantar com a natureza de Bertioga!
+            </p>
+
+            <div>
+                <img src="mídia/whatsapp icon.png" alt="whatsapp">
+                <h5>Clique no botão do Whatsapp no menu lateral!</h5>
+            </div>
+        </div>
+
+        <form class="forms">
+            <h5>Se preferir podemos entrar em contato para realizar o agendamento</h5>
+
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <input type="text" id="numero" placeholder="Digite seu número de celular">
+
+            <button>Enviar</button>
+        </form>
+    </div>
+
+    
+
+
+
+    <!-- Script do carrosel de imagens -->
     <script src="menu-lateral.js"></script>
     <script src="carrossel.js"></script>
 </body>

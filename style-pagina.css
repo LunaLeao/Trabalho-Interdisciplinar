@@ -5,13 +5,14 @@
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
-    margin: 0;
 }
 
 body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
@@ -40,6 +41,19 @@ main{
 }
 .wrap > .bg-video > video {
     width: 100%;
+}
+
+.titulo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 3.5px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin-left: 6rem;
+    margin-top: 19rem;
+    position: absolute;
+    z-index: -1;
+    
 }
 
 .passeio{
@@ -103,23 +117,23 @@ main{
 }
 
 .carroussel-container {
-    margin-left: 32rem;
-    justify-content: center;
-    margin-top: 2rem;
-    display: flex;
     align-items: center;
-    max-width: 800px;
+    margin-left: 16%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    max-width: 1000px;  
     width: 100%;
 }
 
 .carroussel {
+    width: 100%;
+    max-width: 1000px;
     overflow: hidden;
-    border-radius: 20px;
-    flex-grow: 1;
+    border-radius: 30px;
 }
 
 .slides {
-    
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -131,19 +145,162 @@ main{
 
 .slide img {
     width: 100%;
-    height: 500px; /* Ajustar a altura conforme necessário */
+    height: 550px; /* Ajustar a altura conforme necessário */
     object-fit: cover; /* Mantém a proporção da imagem */
 }
 
 .navegacao button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(100, 100, 100, 0.5);
     border: none;
-    color: white;
+    border-radius: 100px;
+    font-size: 2rem;
+    color: rgb(13, 112, 0);
     padding: 10px;
     cursor: pointer;
     margin: 0 10px;
 }
 
 .navegacao button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 129, 0, 0.8);
+}
+
+.tour360{
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    
+}
+
+.informativos{
+    background-color: #087c1b;
+    height: 450px;
+}
+
+.tit-inform{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.itensLevar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.itens > ul > h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: #085114;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+
+
+.itens > ul > h4{
+    font-size: 1.5rem;
+}
+
+.itens{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.itens > h3, h4{
+    padding: 1rem;
+}
+
+.itens > ul > li{
+    font-size: 1.3rem;
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    background-color: #085114;
+    align-content: center;
+    padding: 1rem;
+}
+
+.texto{
+    margin-left: 5rem;
+    margin-right: 6rem;
+    padding: 1rem;
+    color: white;
+}
+
+.texto > h3{
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    
+}
+
+.texto > p{
+    text-justify: auto;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.texto > div{
+    display: flex;
+    align-items: center;
+}
+
+.texto > div > img{
+    width: 100px;
+}
+
+.texto > div > h5{
+    font-size: 1.2rem;
+}
+
+.forms{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.forms > h5{
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.forms > input{
+    padding: 0.8rem;
+    background-color: #e6e6e6;
+    width: 500px;
+    font-size: 1rem;
+    border: 2px solid #838383;
+    border-radius: 20px;
+    margin: 0.1rem;
+}
+
+.forms > button{
+    all: unset;
+    background-color: #00a31b;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #003108;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 3.5px 5px 0px rgba(0, 0, 0, 0.5);
+    align-self: flex-start;
+    transition: 0.3s ease-in-out;
+}
+
+.forms > button:hover{
+    font-size: 1.5rem;
+    cursor: pointer;
 }
