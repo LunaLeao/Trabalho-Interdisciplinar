@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin-left: 5.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.wrap{
+    /*Ajuste a largura e altura desejadas aqui*/
+    
+    height: 400px;
+
+    /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
+    position: relative;
+}
+
+.wrap > .bg-video {
+    position: absolute;
+    
+    
+    z-index: -100; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+}
+.wrap > .bg-video > video {
+    width: 100%;
+}
+
+.titulo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 3.5px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin-left: 6rem;
+    margin-top: 19rem;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+.passeio{
+    padding-right: 2rem;
+}
+
+
+.principal{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+}
+
+.tituloTopic{
+    font-size: 1.5rem;
+    color: #085114;
+    margin-bottom: 1rem;
+}
+
+.sobre{
+    text-align: justify;
+}
+
+#formatacao{
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+}
+
+#atractive{
+    text-align: center;
+}
+
+.atrativos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.icon-atrat{
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.nome_atrat{
+    font-size: 1rem;
+    color: #085114;
+    width: 100px;
+    text-align: center;
+}
+
+#separar{
+    margin-top: 10px;
+}
+
+.dado{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #3E3E3E;
+}
+
+.carroussel-container {
+    align-items: center;
+    margin-left: 16%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    max-width: 1000px;  
+    width: 100%;
+}
+
+.carroussel {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide img {
+    width: 100%;
+    height: 550px; /* Ajustar a altura conforme necessário */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.navegacao button {
+    background-color: rgba(100, 100, 100, 0.5);
+    border: none;
+    border-radius: 100px;
+    font-size: 2rem;
+    color: rgb(13, 112, 0);
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.navegacao button:hover {
+    background-color: rgba(0, 129, 0, 0.8);
+}
+
+.tour360{
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    
+}
+
+.informativos{
+    background-color: #087c1b;
+    height: 450px;
+}
+
+.tit-inform{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.itensLevar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.itens > ul > h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: #085114;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+
+
+.itens > ul > h4{
+    font-size: 1.5rem;
+}
+
+.itens{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.itens > h3, h4{
+    padding: 1rem;
+}
+
+.itens > ul > li{
+    font-size: 1.3rem;
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    background-color: #085114;
+    align-content: center;
+    padding: 1rem;
+}
+
+.texto{
+    margin-left: 5rem;
+    margin-right: 6rem;
+    padding: 1rem;
+    color: white;
+}
+
+.texto > h3{
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    
+}
+
+.texto > p{
+    text-justify: auto;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.texto > div{
+    display: flex;
+    align-items: center;
+}
+
+.texto > div > img{
+    width: 100px;
+}
+
+.texto > div > h5{
+    font-size: 1.2rem;
+}
+
+.forms{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.forms > h5{
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.forms > input{
+    padding: 0.8rem;
+    background-color: #e6e6e6;
+    width: 500px;
+    font-size: 1rem;
+    border: 2px solid #838383;
+    border-radius: 20px;
+    margin: 0.1rem;
+}
+
+.forms > button{
+    all: unset;
+    background-color: #00a31b;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #003108;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 3.5px 5px 0px rgba(0, 0, 0, 0.5);
+    align-self: flex-start;
+    transition: 0.3s ease-in-out;
+}
+
+.forms > button:hover{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (min-width:280px) and (max-width:820px){
+    main{
+        margin: 2rem;
+    }
+    header{
+        width: 100%;
+        justify-content: start;
+        margin: 0;
+        align-items: start;
+        padding: 1rem;
+    }
+
+
+
+    .principal{
+        display: block;
+    }
+    .atrativos{
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+    .tour360{
+        padding: 0;
+        margin: 0;
+        width: 20rem;
+        height: 20rem;
+    }.carroussel{
+        max-width: auto;
+        max-height: auto;
+    }
+    .carroussel-container{
+        margin: 0;
+        width: fit-content;
+    }div.wrap .titulo{
+        display: none;
+    }
+    article .titulo{
+        display: flex;
+        transform: translateZ(2px);
+        margin: 0;
+    }
+    .informativos{
+        height: auto;
+        padding-bottom: 1rem;
+    }
+    .itensLevar{
+        display: inline;
+    }
+    .contato{
+        padding: 1rem;
+        padding-top: 5rem;
+        display: block;
+    }.texto{
+        margin: 0;
+    }
+    .forms > input{
+        width: 22rem;
+    }
+    .navegacao button{
+        margin: 0;
+    }
+}
