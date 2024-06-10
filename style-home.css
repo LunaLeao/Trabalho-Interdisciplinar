@@ -47,15 +47,4 @@ body {
     color: white;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
     text-align: center;
-
-}
-
-
-
-@media (min-width:280px) and (max-width:820px){
-   
-
-    .frase2{
-        margin:2rem;
-    }
 }

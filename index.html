@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-menus.css">
     <link rel="stylesheet" href="style-home.css">
-    <link rel="stylesheet" href="style-pagina.css">
+    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="responsividade.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Turismo em Bertioga - Safe Ecotour</title>
 </head>
 
 <body>
-
-    <header>
-       <section id="menu_horizontal">
+    <section id="menu_horinzontal"></section>
+    <section id="menu_lateral" style=" position: fixed; z-index: 1; width: 100%;"></section>
+    <!-- <header>
+        
             <img class="logo" src="mídia/logo-safe-ecotour.png" alt="">
 
             <nav class="passeio">
@@ -38,70 +40,10 @@
                 </ul>
 
             </nav>
-        </section>
-    </header>
+        
+    </header> -->
 
-    <main class="home">
-    <section id="menu_lateral">
-        <nav class="menu-lateral">
-
-                <div class="btn-expandir" id="btn-exp">
-                
-                    <i class="bi bi-list"></i>
-                    
-                </div>
-
-                <ul>
-                    <li class="item-menu ativo">
-                        <a href="#home">
-                            <span class="icon-menu">
-                                <i class="bi bi-house-door"></i>
-                            </span>
-                            <span class="txt-menu">Home</span>
-                        </a>
-                    </li>
-
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon-menu">
-                                <i class="bi bi-people"></i>    
-                            </span>
-                            <span class="txt-menu">Equipe</span>
-                        </a>
-                    </li>
-
-                    <li class="item-menu">
-                        <a href="https://www.instagram.com/safeecotour/">
-                            <span class="icon-menu">
-                                <i class="bi bi-instagram"></i>    
-                            </span>
-                            <span class="txt-menu">Instagram</span>
-                        </a>
-                    </li>
-
-                    <li class="item-menu">
-                        <a href="https://www.youtube.com/channel/UCLz3QlwG2m_yZJYbh6GET8Q">
-                            <span class="icon-menu">
-                                <i class="bi bi-youtube"></i>
-                            </span>
-                            <span class="txt-menu">Youtube</span>
-                        </a>
-                    </li>
-
-                    <li class="item-menu">
-                        <a href="#">
-                            <span class="icon-menu">
-                                <i class="bi bi-whatsapp"></i>      
-                            </span>
-                            <span class="txt-menu">Marque seu Passeio</span>
-                        </a>
-                    </li>
-
-                    <img class="fundacao" src="mídia/fundacao-florestal.png" alt="">
-                </ul>   
-        </nav>
     
-    </section>
 
         <article>
             <section class="frase1">
@@ -116,76 +58,15 @@
 
     </main>
 
-    <footer>
-        <div class="informativos">
-            <h3 class="tit-inform">Seu passeio seguro durante a Trilha</h3>
-
-            <div class="itensLevar">
-                <div class="itens">
-                    <ul>
-                        <h3>Responsabilidade Pessoal</h3>
-                        <h4>Itens Obrigatórios</h4>
-
-                        <li>Calçado fechado</li>
-                        <li>Calça</li>
-                        <li>camiseta</li>
-
-                        <h4>Itens Recomendados</h4>
-                        <li>Repelente</li>
-                        <li>Protetor Solar</li>
-                        <li>Boné ou chapéu</li>
-                    </ul>
-                </div>
-
-                <div class="itens">
-                    <ul>
-                        <h3>Responsabilidade Ecotour</h3>
-                        <h4>Kit de Primeiros Socorros</h4>
-
-                        <li>Maleta de primeiros socorros</li>
-                        <li>Máscara pocket para RCP</li>
-                        <li>Kit talas moldáveis</li>
-
-                        <h4>Equipamento de Segurança</h4>
-                        
-                        <li>Cordas de ancoragem</li>
-                        <li>Boia salva vidas</li>
-                        <li>Rádio comunicador</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="contato">
-            <div class="texto">
-                <h3>Agende seu Passeio</h3>
-                <p>Explore as trilhas de Bertioga! Traga sua família e amigos para uma aventura inesquecível. Agende seu passeio por
-                    telefone ou WhatsApp, ou preencha seu nome e telefone no formulário ao lado, e nós entraremos em contato.Prepare-se
-                    para se encantar com a natureza de Bertioga!
-                </p>
-
-                <div>
-                    <img src="mídia/whatsapp icon.png" alt="whatsapp">
-                    <h5>Clique no botão do Whatsapp no menu lateral!</h5>
-                </div>
-            </div>
-
-            <form class="forms">
-                <h5>Se preferir podemos entrar em contato para realizar o agendamento</h5>
-
-                <input type="text" id="nome" placeholder="Digite seu nome">
-                <input type="text" id="numero" placeholder="Digite seu número de celular">
-
-                <button>Enviar</button>
-            </form>
-        </div>
-    </footer>
+    <section id="footer"></section>
 
     <video autoplay muted loop poster="mídia/fundo.png" class="bg_video" >
         <source src="mídia/background video.mp4" type="video/mp4">
     </video>
    
-</body>
-<script src="menu-lateral.js"></script>
+    <script src="header.js"></script>
+    <script src="menu-display.js"></script>
+    <script src="menu-lateral.js"></script>
+    <script src="footer.js"></script>
+</body> 
 </html>

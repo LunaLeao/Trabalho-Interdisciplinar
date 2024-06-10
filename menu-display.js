@@ -13,7 +13,7 @@ section_menu_lateral.innerHTML=`
 
                     <ul>
                         <li class="item-menu ativo">
-                            <a href="#">
+                            <a href="index.html">
                                 <span class="icon-menu">
                                     <i class="bi bi-house-door"></i>
                                 </span>

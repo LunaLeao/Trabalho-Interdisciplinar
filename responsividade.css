@@ -1,0 +1,312 @@
+/* responsividade do mobile */
+@media (min-width:360px) and (max-width:400px){
+    main{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    header{
+        background-color: rgb(0, 123, 20);
+        justify-content: start;
+        margin: 0;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .select{
+        font-size: 15px;
+    }
+
+    .hamburger{
+        width: 130px;
+        
+    }
+
+    .menu{
+        font-size: 1rem;
+    }
+
+    .bg-video > video{
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .frase1 > p{
+        font-size: 1.5rem;
+    }
+
+    .frase2{
+        font-size: 1.3rem;
+        margin-top: 19rem;
+        margin-bottom: 1rem;
+    }
+
+    .titulo{
+        background-color: rgba(0, 123, 20, 0.5);
+        border-radius: 20px;
+        display: flex;
+        font-size: 1.2rem;
+        width: 300px;
+        padding: 0.5rem;
+        margin: 0;
+        margin-left: 2rem;
+        margin-top: 10rem;
+        text-align: center;
+        
+    }
+
+    #formatacao{
+        font-size: 1rem;
+    }
+
+    .principal{
+        display: block;
+        margin-top: 0;
+    }
+
+    .dado{
+        font-size: 1rem;
+    }
+
+    .atrativos{
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+    #atractive{
+        margin-top: 1rem;
+    }
+
+    .nome_atrat{
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .tour360{
+        padding: 0;
+        margin: 0;
+        width: 18.5rem;
+        height: 18.5rem;
+    }
+
+    .carroussel-container{
+        margin: 0; 
+    }
+
+    .informativos{
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .itensLevar{
+        display: inline;
+    }
+
+    .contato{
+        padding: 1rem;
+        padding-top: 5rem;
+        display: block;
+    }
+    
+    .texto{
+        margin: 0;
+    }
+
+    .forms > input{
+        width: 22rem;
+    }
+
+    .navegacao button{
+        margin: 5px;
+        width: 30px;
+        font-size: 1rem;
+    }
+
+    .contato{
+        padding: 0.5rem;
+    }
+
+    .texto > h3{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .texto > p{
+        font-size: 1rem;
+
+    }
+
+    footer{
+        display: flex;
+    }
+}
+
+/* responsividade do tablet deitado */
+@media (min-width:1000px) and  (max-width: 1200px){
+    .frase1 > p{
+        font-size: 2.3rem;
+    }
+
+    #formatacao{
+        font-size: 1rem;
+    }
+
+    .carroussel-container{
+        max-width: 800px; 
+    }
+
+    .texto > h3{
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .texto > p{
+        font-size: 1rem;
+
+    }
+}
+
+/* responsividade do tablet em pé */
+@media (min-width:800px) and  (max-width: 850px){
+    main{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    header{
+        margin: 0;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .frase2{
+        width: 780px;
+        margin-top: 45rem;
+        margin-left: 1rem;
+    }
+
+    .titulo{
+        background-color: rgba(0, 123, 20, 0.5);
+        border-radius: 20px;
+        width: 500px;
+        padding: 0.5rem;
+        margin: 0;
+        margin-left: 9rem;
+        margin-top: 11rem;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .icon-atrat > svg{
+        width: 3rem;
+    }
+
+    .nome_atrat{
+        font-size: 14px;
+        align-items: center;
+    }
+
+    #formatacao{
+        font-size: 1rem;
+    }
+
+    .tour360{
+        padding: 0;
+        margin: 0;
+        margin-left: 2rem;
+        width: 22rem;
+        height: 18rem;
+    }
+
+    .carroussel-container{
+        margin-left: 2rem;
+        max-width: 750px; 
+    }
+
+    .informativos{
+        height: 500px;
+    }
+
+    .texto > h3{
+        font-size: 2rem;
+    }
+
+    .texto > p{
+        font-size: 1rem;
+
+    }
+
+    .forms > input{
+        width: 20rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        height: 10.2vh;
+        padding: 0.5rem;
+        background-color: rgb(0, 123, 20);
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > img{
+        width: 150px;
+    }
+
+    .linha{
+        text-align: center;
+        width: 50px;
+        height: 0px;
+        border: 3px solid #FFFFFF;
+        transform: rotate(90deg);
+     
+    }
+     
+    footer > div > a{
+        padding: 5px;
+        font-size: 1.5rem;
+        color: #003f05;
+        font-weight: 900;
+        text-align: center;
+         
+    }
+     
+    .link-footer:hover{
+       background-color: #32ff437a;
+       border-radius: 10px;
+         
+    }
+     
+    .icon-footer{
+        text-align: center;
+        margin-top: 5px;
+    }
+     
+    .insta > i{
+        font-size: 50px;
+        padding: 5px;
+        margin-right: 10px;
+        color: white;
+         
+    }
+     
+    .youtube > i{
+        font-size: 60px;
+        padding: 5px;   
+        color: white; 
+    }
+     
+    footer > div > a > span > i:hover{
+        background-color: #32ff437a;
+        border-radius: 10px;
+           
+    }
+}

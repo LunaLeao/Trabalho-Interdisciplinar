@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-menus.css">
     <link rel="stylesheet" href="style-pagina.css">
+    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="responsividade.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Turismo em Bertioga - Safe Ecotour</title>
@@ -13,39 +15,40 @@
 
 <body>
 
-    <header style=" position: fixed; z-index: 1; width: 100%;">
-        <section id="menu_horinzontal"></section>
-        <!-- <img class="logo" src="mídia/logo-safe-ecotour.png" alt="">
+    
+    <section id="menu_horinzontal" style=" position: fixed; z-index: 1; width: 100%;"></section>
+    <section id="menu_lateral" style=" position: fixed; z-index: 1; width: 100%;"></section>
+    <!-- <img class="logo" src="mídia/logo-safe-ecotour.png" alt="">
 
-        <nav class="passeio">
-            <ul class="nav-links">
-
-
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">Selecione seu Passeio <i
-                        class="bi bi-arrow-down-circle-fill"></i></label>
+    <nav class="passeio">
+        <ul class="nav-links">
 
 
-                <div class="menu">
-                    <li><a href="cachoeira-do-elefante.html">Cachoeira do Elefante</a></li>
-                    <li><a href="#">Cachoeira de Guaratuba</a></li>
-                    <li><a href="#">Cachoeira da Torre 47</a></li>
-                    <li><a href="#">Mirante do Itaguá</a></li>
-                    <li><a href="#">Rio Jaguareguava</a></li>
-                    <li><a href="#">Trilha D'Água</a></li>
-                    <li><a href="#">Trilha do Vale Verde</a></li>
-                </div>
-            </ul>
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">Selecione seu Passeio <i
+                    class="bi bi-arrow-down-circle-fill"></i></label>
 
-        </nav> -->
 
-    </header>
+            <div class="menu">
+                <li><a href="cachoeira-do-elefante.html">Cachoeira do Elefante</a></li>
+                <li><a href="#">Cachoeira de Guaratuba</a></li>
+                <li><a href="#">Cachoeira da Torre 47</a></li>
+                <li><a href="#">Mirante do Itaguá</a></li>
+                <li><a href="#">Rio Jaguareguava</a></li>
+                <li><a href="#">Trilha D'Água</a></li>
+                <li><a href="#">Trilha do Vale Verde</a></li>
+            </div>
+        </ul>
+
+    </nav> -->
+
+    
     <div class="wrap">
 
         <!-- vídeo de fundo no início da página -->
         <div class="bg-video">
             <video autoplay muted loop poster="mídia/fundo.png">
-                <source src="mídia/Cachoeira do Elefante.mp4" type="video/mp4">
+                <source src="mídia/background video.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -62,10 +65,6 @@
             
             <!-- informações sobre o lugar e o passeio -->
             <section class="sobre">
-                <!-- título da página(mobile) -->
-                <h2 class="titulo" style="display: none;">
-                    Cachoeira do Elefante via Mirante ou pelo Vale Verde
-                </h2>
                 <h3 class="tituloTopic">Sobre o Passeio</h3>
 
                 <p id="formatacao">Descubra a grandiosidade da natureza na Cachoeira do Elefante, um dos destaques dos
@@ -224,7 +223,7 @@
                 <h3 class="tituloTopic" style="text-align: center; margin-top: 2rem;">Tour 360º</h3>
 
                 <iframe class="tour360"
-                    src="https://momento360.com/e/u/5030aa67ab3e409393a14c8ca364ed29?utm_campaign=embed&utm_source=other&size=medium&display-plan=true"
+                    src="https://momento360.com/e/u/ef99d4ede87946b98da56ca8b9bbd3a8?utm_campaign=embed&utm_source=other&size=medium&display-plan=true"
                     frameborder="0">
                 </iframe>
 
@@ -245,10 +244,10 @@
         <div class="carroussel">
             <div class="slides">
                 <div class="slide">
-                    <img src="mídia/fundo.png" alt="Imagem 1">
+                    <img src="mídia/cachoeira_elefante/1.jpg" alt="Imagem 1">
                 </div>
                 <div class="slide">
-                    <img src="mídia/fundo.png" alt="Imagem 2">
+                    <img src="mídia/cachoeira_elefante/2.jpg" alt="Imagem 2">
                 </div>
                 <div class="slide">
                     <img src="mídia/cachoeira_elefante/3.jpg" alt="Imagem 3">
@@ -267,17 +266,78 @@
         </div>
     </div>
 
-    <!-- Informações do que levar para a trilha -->
-     <footer>
-    </footer>
+    <div class="informativos">
+        <h3 class="tit-inform">Seu passeio seguro durante a Trilha</h3>
+
+        <div class="itensLevar">
+            <div class="itens">
+                <ul>
+                    <h3>Responsabilidade Pessoal</h3>
+                    <h4>Itens Obrigatórios</h4>
+
+                    <li>Calçado fechado</li>
+                    <li>Calça</li>
+                    <li>camiseta</li>
+
+                    <h4>Itens Recomendados</h4>
+                    <li>Repelente</li>
+                    <li>Protetor Solar</li>
+                    <li>Boné ou chapéu</li>
+                </ul>
+            </div>
+
+            <div class="itens">
+                <ul>
+                    <h3>Responsabilidade Ecotour</h3>
+                    <h4>Kit de Primeiros Socorros</h4>
+
+                    <li>Maleta de primeiros socorros</li>
+                    <li>Máscara pocket para RCP</li>
+                    <li>Kit talas moldáveis</li>
+
+                    <h4>Equipamento de Segurança</h4>
+                    
+                    <li>Cordas de ancoragem</li>
+                    <li>Boia salva vidas</li>
+                    <li>Rádio comunicador</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contato">
+        <div class="texto">
+            <h3>Agende seu Passeio</h3>
+            <p>Explore as trilhas de Bertioga! Traga sua família e amigos para uma aventura inesquecível. Agende seu passeio por
+                telefone ou WhatsApp, ou preencha seu nome e telefone no formulário ao lado, e nós entraremos em contato.Prepare-se
+                para se encantar com a natureza de Bertioga!
+            </p>
+
+            <div>
+                <img src="mídia/whatsapp icon.png" alt="whatsapp">
+                <h5>Clique no botão do Whatsapp!</h5>
+            </div>
+        </div>
+
+        <form class="forms">
+            <h5>Se preferir podemos entrar em contato para realizar o agendamento</h5>
+
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <input type="text" id="numero" placeholder="Digite seu número de celular">
+
+            <button>Enviar</button>
+        </form>
+    </div>
+
+    <section id="footer"></section>
     
- 
+ <!-- script para adicionar o menu lateral em todas as paginas -->
+ <script src="header.js"></script>
+ <script src="menu-display.js"></script>
+ <!-- Script do carrosel de imagens -->
+ <script src="menu-lateral.js"></script>
+ <script src="carrossel.js"></script>
+ <script src="footer.js"></script>
 </body>
-   <!-- script para adicionar o menu lateral em todas as paginas -->
-    <script src="footer.js"></script>
-   <script src="header.js"></script>
-   <script src="menu-display.js"></script>
-   <!-- Script do carrosel de imagens -->
-   <script src="menu-lateral.js"></script>
-   <script src="carrossel.js"></script>
 </html>

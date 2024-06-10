@@ -1,0 +1,62 @@
+footer{
+    height: 19.7vh;
+    padding: 0.5rem;
+    background-color: rgb(0, 123, 20);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+footer > img{
+    width: 100px;
+}
+
+.linha{
+   text-align: center;
+    width: 24px;
+    height: 0px;
+    border: 2px solid #FFFFFF;
+    transform: rotate(90deg);
+
+}
+
+footer > div > a{
+    padding: 5px;
+    font-size: 12px;
+    color: #003f05;
+    font-weight: 900;
+    text-align: center;
+    
+}
+
+.link-footer:hover{
+  background-color: #32ff437a;
+  border-radius: 10px;
+    
+}
+
+.icon-footer{
+    align-items: center;
+    margin-top: 5px;
+}
+
+.insta > i{
+    font-size: 30px;
+    padding: 5px;
+    margin-right: 10px;
+    color: white;
+    
+}
+
+.youtube > i{
+    font-size: 40px;
+    padding: 5px;   
+    color: white; 
+}
+
+footer > div > a > span > i:hover{
+    background-color: #32ff437a;
+    border-radius: 10px;
+      
+}
