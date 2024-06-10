@@ -12,13 +12,13 @@ footer.innerHTML=`
         </div>
 
         <div class="icon-footer">
-            <a href="#">
+            <a href="https://www.instagram.com/safeecotour/">
                 <span class="insta">
                     <i class="bi bi-instagram"></i>    
                 </span>
             </a>
 
-            <a href="#">
+            <a href="https://www.youtube.com/channel/UCLz3QlwG2m_yZJYbh6GET8Q">
                 <span class="youtube">
                     <i class="bi bi-youtube"></i>
                 </span>

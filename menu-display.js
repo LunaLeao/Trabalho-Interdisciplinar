@@ -31,7 +31,7 @@ section_menu_lateral.innerHTML=`
                         </li>
 
                         <li class="item-menu">
-                            <a href="#">
+                            <a href="https://www.instagram.com/safeecotour/">
                                 <span class="icon-menu">
                                     <i class="bi bi-instagram"></i>    
                                 </span>
@@ -40,7 +40,7 @@ section_menu_lateral.innerHTML=`
                         </li>
 
                         <li class="item-menu">
-                            <a href="#">
+                            <a href="https://www.youtube.com/channel/UCLz3QlwG2m_yZJYbh6GET8Q">
                                 <span class="icon-menu">
                                     <i class="bi bi-youtube"></i>
                                 </span>
