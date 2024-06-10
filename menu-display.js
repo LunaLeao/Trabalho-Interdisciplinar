@@ -22,7 +22,7 @@ section_menu_lateral.innerHTML=`
                         </li>
 
                         <li class="item-menu">
-                            <a href="#">
+                            <a href="quem-somos.html">
                                 <span class="icon-menu">
                                     <i class="bi bi-people"></i>    
                                 </span>

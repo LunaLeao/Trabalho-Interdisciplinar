@@ -21,6 +21,26 @@ main{
     margin-top: 1rem;
 }
 
+.wrap-foto{
+    /*Ajuste a largura e altura desejadas aqui*/
+    
+    height: 700px;
+
+    /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
+    position: relative;
+}
+
+.wrap-foto > .bg-video {
+    position: absolute;
+    z-index: -100; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+}
+.wrap-foto > .bg-video > video {
+    width: 100%;
+}
+
 .wrap{
     /*Ajuste a largura e altura desejadas aqui*/
     
@@ -32,8 +52,6 @@ main{
 
 .wrap > .bg-video {
     position: absolute;
-    
-    
     z-index: -100; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
     width: 100%;
     height: 100%;
@@ -301,4 +319,14 @@ main{
 .forms > button:hover{
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.certificado{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.foto{
+    width: 1384px;
 }

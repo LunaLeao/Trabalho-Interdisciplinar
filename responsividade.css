@@ -148,6 +148,16 @@
     footer{
         display: flex;
     }
+
+    .certificado > img{
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .foto{
+        width: 360px;
+        height: 30vh;
+    }
 }
 
 /* responsividade do mobile 2 */
@@ -308,6 +318,15 @@
         width: 150px;
     }
 
+    .certificado > img{
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .foto{
+        width: 412px;
+    }
+
 }
 
 /* responsividade do tablet deitado */
@@ -332,6 +351,11 @@
     .texto > p{
         font-size: 1rem;
 
+    }
+
+    .foto{
+        width: 1165px;
+        
     }
 }
 
@@ -472,5 +496,15 @@
         background-color: #32ff437a;
         border-radius: 10px;
            
+    }
+
+    .certificado > img{
+        width: 150px;
+        margin-bottom: 1rem;
+        
+    }
+    
+    .foto{
+        width: 820px;
     }
 }
