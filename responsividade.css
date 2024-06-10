@@ -1,4 +1,4 @@
-/* responsividade do mobile */
+/* responsividade do mobile 1 */
 @media (min-width:360px) and (max-width:400px){
     main{
         margin-left: 2rem;
@@ -141,9 +141,171 @@
 
     }
 
+    .forms{
+        padding-bottom: 1rem;
+    }
+
     footer{
         display: flex;
     }
+}
+
+/* responsividade do mobile 2 */
+@media (min-width:400px) and (max-width:420px){
+    main{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    header{
+        background-color: rgb(0, 123, 20);
+        justify-content: start;
+        margin: 0;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .select{
+        font-size: 15px;
+    }
+
+    .hamburger{
+        width: 130px;
+        
+    }
+
+    .menu{
+        font-size: 1rem;
+    }
+
+    .bg-video > video{
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .frase1 > p{
+        font-size: 1.5rem;
+    }
+
+    .frase2{
+        font-size: 1.5rem;
+        margin-top: 25.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .titulo{
+        background-color: rgba(0, 123, 20, 0.5);
+        border-radius: 20px;
+        display: flex;
+        font-size: 1.2rem;
+        width: 300px;
+        padding: 0.5rem;
+        margin: 0;
+        margin-left: 2rem;
+        margin-top: 10rem;
+        text-align: center;
+        
+    }
+
+    #formatacao{
+        font-size: 1rem;
+    }
+
+    .principal{
+        display: block;
+        margin-top: 0;
+    }
+
+    .dado{
+        font-size: 1rem;
+    }
+
+    .atrativos{
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+    #atractive{
+        margin-top: 1rem;
+    }
+
+    .nome_atrat{
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .tour360{
+        padding: 0;
+        margin: 0;
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .carroussel-container{
+        margin: 0; 
+    }
+
+    .informativos{
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .itensLevar{
+        display: inline;
+    }
+
+    .contato{
+        padding: 1rem;
+        padding-top: 5rem;
+        display: block;
+    }
+    
+    .texto{
+        margin: 0;
+    }
+
+    .forms{
+        padding-bottom: 1rem;
+    }
+
+    .forms > input{
+        width: 22rem;
+    }
+
+    .navegacao button{
+        margin: 5px;
+        width: 30px;
+        font-size: 1rem;
+    }
+
+    .contato{
+        padding: 0.5rem;
+    }
+
+    .texto > h3{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .texto > p{
+        font-size: 1rem;
+
+    }
+
+    footer{
+        display: flex;
+        padding-top: 1rem;
+    }
+
+    footer > img{
+        width: 150px;
+    }
+
 }
 
 /* responsividade do tablet deitado */
