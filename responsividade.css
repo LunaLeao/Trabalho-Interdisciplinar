@@ -167,15 +167,15 @@
     }
 
     .logo{
-        width: 150px;
+        width: 200px;
     }
 
     .select{
-        font-size: 15px;
+        font-size: 1rem;  
     }
 
     .hamburger{
-        width: 130px;
+        width: 150px;
         
     }
 
@@ -207,8 +207,8 @@
         width: 300px;
         padding: 0.5rem;
         margin: 0;
-        margin-left: 2rem;
-        margin-top: 10rem;
+        margin-left: 3.5rem;
+        margin-top: 11rem;
         text-align: center;
         
     }
@@ -298,8 +298,10 @@
     }
 
     footer{
+        height: 23vh;
         display: flex;
         padding-top: 1rem;
+        
     }
 
     footer > img{
