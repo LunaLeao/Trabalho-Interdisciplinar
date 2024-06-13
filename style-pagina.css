@@ -135,13 +135,20 @@ main{
     color: #3E3E3E;
 }
 
+.tour360{
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    
+}
+
 .carroussel-container {
     align-items: center;
-    margin-left: 16%;
+    margin-left: 20%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
-    max-width: 1000px;  
+    max-width: 8000px;  
     width: 100%;
 }
 
@@ -181,13 +188,6 @@ main{
 
 .navegacao button:hover {
     background-color: rgba(0, 129, 0, 0.8);
-}
-
-.tour360{
-    width: 500px;
-    height: 400px;
-    border-radius: 20px;
-    
 }
 
 .informativos{

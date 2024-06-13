@@ -375,8 +375,9 @@
 
     .frase2{
         width: 780px;
-        margin-top: 45rem;
+        margin-top: 37rem;
         margin-left: 1rem;
+        margin-bottom: 2rem;
     }
 
     .titulo{
@@ -420,6 +421,11 @@
 
     .informativos{
         height: 500px;
+    }
+
+    .texto{
+        margin-left: 1rem;
+        margin-right: 2rem;
     }
 
     .texto > h3{
@@ -466,6 +472,10 @@
         text-align: center;
          
     }
+
+    .link-footer{
+        font-size: 1.3rem;
+    }
      
     .link-footer:hover{
        background-color: #32ff437a;
@@ -488,6 +498,12 @@
      
     .youtube > i{
         font-size: 60px;
+        padding: 5px;   
+        color: white; 
+    }
+
+    .whatsapp > i{
+        font-size: 55px;
         padding: 5px;   
         color: white; 
     }

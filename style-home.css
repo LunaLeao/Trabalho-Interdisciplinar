@@ -31,7 +31,7 @@ body {
     margin-top: 1rem;
     margin-bottom: 5rem;
     font-family: Montserrat, sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
     color: white;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
@@ -40,9 +40,9 @@ body {
 }
 
 .frase2{
-    margin-top: 35rem;
+    margin-top: 43rem;
     font-family: Montserrat, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: white;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);

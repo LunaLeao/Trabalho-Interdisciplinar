@@ -23,6 +23,12 @@ footer.innerHTML=`
                     <i class="bi bi-youtube"></i>
                 </span>
             </a>
+
+            <a href="#">
+                <span class="whatsapp">
+                    <i class="bi bi-whatsapp"></i>
+                </span>
+            </a>
         </div>
     </footer>
     `

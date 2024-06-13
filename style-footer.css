@@ -1,5 +1,5 @@
 footer{
-    height: 19.7vh;
+    height: 25vh;
     padding: 0.5rem;
     background-color: rgb(0, 123, 20);
     align-items: center;
@@ -9,16 +9,20 @@ footer{
 }
 
 footer > img{
-    width: 100px;
+    width: 150px;
 }
 
 .linha{
    text-align: center;
-    width: 24px;
+    width: 26px;
     height: 0px;
     border: 2px solid #FFFFFF;
     transform: rotate(90deg);
 
+}
+
+.link-footer{
+    font-size: 15px;
 }
 
 footer > div > a{
@@ -38,11 +42,11 @@ footer > div > a{
 
 .icon-footer{
     align-items: center;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 .insta > i{
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px;
     margin-right: 10px;
     color: white;
@@ -50,10 +54,18 @@ footer > div > a{
 }
 
 .youtube > i{
-    font-size: 40px;
+    font-size: 30px;
     padding: 5px;   
     color: white; 
 }
+
+.whatsapp > i{
+    font-size: 25px;
+    padding: 5px;
+    
+    color: white; 
+}
+ 
 
 footer > div > a > span > i:hover{
     background-color: #32ff437a;
